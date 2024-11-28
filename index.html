@@ -19,7 +19,7 @@
   <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="index.html">Página inicial <span class="sr-only">(página atual)</span></a>
+        <a class="nav-link" href="#">Página inicial <span class="sr-only">(página atual)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="Login.html">Login</a>
@@ -42,42 +42,70 @@
   </div>
 
     </nav>
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="img/reddead.jpg" alt="Primeiro Slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="img/sons.jpg" alt="Segundo Slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="img/HouseFlipper.jpg" alt="Terceiro Slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Próximo</span>
+    </a>
+  </div>
+</div>
+</header>
 <body>
     <main>
-        <article>
-            <div class="row">
-                <div class="col-sm-3 col-md">
-                <img id="star" width="100%" src="img/stardewvalley.png" alt="Console">
-                </div>
-                <div class="col-sm-3 col-md">
-                <h1>Stardew Valley</h1>
-                <p>
-                    <h2>R$24,99</h2>
-                    <input type="button" nome="comprar" value="Compre">
-                </p>
-                <p class="h6">
-                    Você está de mudança para o Vale... <br>
-                    Você herdou a antiga fazenda do seu avô, em Stardew Valley. Com ferramentas de segunda-mão e algumas moedas, você parte para dar início a sua nova vida. Será que você vai aprender a viver da terra, a transformar esse matagal em um próspero lar?
-                
-                    MÍNIMOS:<br>
-                    SO *: Windows Vista or greater<br>
-                    Processador: 2 Ghz<br>
-                    Memória: 2 GB de RAM<br>
-                    Placa de vídeo: 256 mb video memory, shader model 3.0+<br>
-                    DirectX: Versão 10<br>
-                    Armazenamento: 500 MB de espaço disponível<br>
-                </p>
-            </div>
-            <div class="col-sm-3 col-md">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-sm-3 col-md"> <!--  sm - regra para telas pequenas (resolução), md telas médias, lg telas grandes  -->
+                        <article>
+              <img id="minecraft" width="100%"   src="img/minecraft.jpg" alt="Console">
+              <a id="mine" href="JogoMinecraft.html">Minecraft</a>
+      </article>
+          </div>
+          <div class="col-sm-3 col-md">  <!--  coluna é dividia entre 1 e 12  -->
+            <article>
 
-            </div>
-        </article>
+              <img id="stardewvalley" width="100%"  src="img/stardewvalley.jpg" alt="Console">
+              <a id="stardew" href="JogoStardew.html">Stardew Valley</a>
+
+      </article>
+          </div>
+          <div class="col-sm-3 col-md">
+            <article>
+
+              <img id="greenhell" width="100%"  src="img/greenhell.png" alt="Console">
+              <a id="green"    href="JogoGreen.html">Green Hell</a>
+
+      </article>
+          </div>
+        </div>
+      </div>
         
+      
+       
     </main>
-    <footer>
+    <footer class="container-fluid">
         <h3>Contato:</h3>
         <a id="suporte" href="">Suporte</a>
     </footer>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
