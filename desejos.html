@@ -1,107 +1,243 @@
 ﻿<!DOCTYPE html>
-
-<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="pt-br">
 <head>
     <meta charset="utf-8" />
-    <title>Steam da Darkweb</title>
-   <!-- <link rel="stylesheet" href="css/principal.css"> -->
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
+    <title>Lista de Desejos - Steam da Darkweb</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Menu</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">Página inicial <span class="sr-only">(página atual)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="Login.html">Login</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="desejos.html">Lista de desejos</a>
-          <a class="dropdown-item" href="#">Carinho</a>
-          <div class="dropdown-divider"></div>
-        </div>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
-    </form>
-  </div>
-
-    </nav>
-<header>
-    <div class="container">
-  <div class="row">
-    <div class="col-sm">
-
-    </div>
-    <div class="col-sm">
-
-    </div>
-    <div class="col-sm">
-        
-    </div>
-    <div class="col-sm">
-        <select name="Ordenar Por">
-            <option value="jogo1">Maior preço</option>
-            <option value="jogo2">Menor preço</option>
-            <option value="jogo3">Desconto</option>
-            <option value="jogo4">Nome</option>
-        </select>
-        </p>
-    </div>
-  </div>
-</div>
-</header>
 <body>
-    <main>
-      <ol>
-      <div class="container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-gamepad mr-2"></i>Steam da Darkweb
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="fas fa-home mr-1"></i>Página inicial
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Login.html">
+                            <i class="fas fa-sign-in-alt mr-1"></i>Login
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                            <i class="fas fa-layer-group mr-1"></i>Menu
+                        </a>
+                        <div class="dropdown-menu bg-dark">
+                            <a class="dropdown-item text-green" href="desejos.html">
+                                <i class="fas fa-heart mr-1"></i>Lista de desejos
+                            </a>
+                            <a class="dropdown-item text-green" href="#">
+                                <i class="fas fa-shopping-cart mr-1"></i>Carrinho
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-green" href="#">
+                                <i class="fas fa-history mr-1"></i>Histórico
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <div class="input-group">
+                        <input class="form-control" type="search" placeholder="Pesquisar jogos..." aria-label="Pesquisar">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-success" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container mt-4">
+        <div class="row align-items-center">
+            <div class="col-md-8">
+                <h1 class="text-green"><i class="fas fa-heart mr-2"></i>Lista de Desejos</h1>
+                <p class="text-muted">Gerencie os jogos que você deseja adquirir no futuro</p>
+            </div>
+            <div class="col-md-4 text-md-right">
+                <div class="form-group mb-0">
+                    <label for="sortSelect" class="text-green mr-2">Ordenar por:</label>
+                    <select class="form-control form-control-sm d-inline-block w-auto" id="sortSelect">
+                        <option>Maior preço</option>
+                        <option>Menor preço</option>
+                        <option>Desconto</option>
+                        <option>Nome</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mt-4">
+        <div class="alert alert-dark bg-dark-green border-success">
+            <i class="fas fa-info-circle mr-2 text-success"></i>
+            Você tem <span class="text-success font-weight-bold">3 jogos</span> na sua lista de desejos.
+        </div>
+        
         <div class="row">
-          <div class="col-sm-3 col-md">
-        <article>
-          <li><img id="minecraft" width="50%" src="img/minecraft.jpg" alt="Console">
-                <a id="mine" href="JogoMinecraft.html">Minecraft</a></li>
-        </article>
-        <article>
-
-          <li><img id="stardewvalley" width="50%" src="img/stardewvalley.png" alt="Console">
-                <a id="stardew" href="JogoStardew.html">Stardew Valley</a></li>
-
-        </article>
-        <article>
-
-          <li> <img id="greenhell" width="50%" src="img/greenhell.png" alt="Console">
-                <a id="green" href="JogoGreen.html">Green Hell</a></li>
-
-        </article>
-      </div>
-      <div class="col-sm-3 col-md">
-
-      </div>
-      <div class="col-sm-3 col-md">
-
-      </div>
-    </div>
-  </div>
-</ol>
+            <div class="col-12">
+                <div class="list-group">
+                    <div class="list-group-item bg-dark border-success mb-3">
+                        <div class="row align-items-center">
+                            <div class="col-md-2 col-4">
+                                <img src="img/minecraft.jpg" class="img-fluid rounded" alt="Minecraft">
+                            </div>
+                            <div class="col-md-6 col-8">
+                                <h5 class="text-green mb-1">Minecraft</h5>
+                                <p class="mb-1 text-muted">Crie, explore e sobreviva em um mundo de blocos infinito.</p>
+                                <div class="d-flex align-items-center">
+                                    <span class="text-success font-weight-bold mr-2">R$ 99,00</span>
+                                    <span class="badge badge-success">Disponível</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 mt-2 mt-md-0">
+                                <div class="d-flex justify-content-between">
+                                    <a href="JogoMinecraft.html" class="btn btn-sm btn-success">
+                                        <i class="fas fa-shopping-cart mr-1"></i>Comprar
+                                    </a>
+                                    <button class="btn btn-sm btn-outline-danger">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </button>
+                                </div>
+                                <button class="btn btn-sm btn-outline-secondary btn-block mt-2">
+                                    <i class="fas fa-gift mr-1"></i>Presentear
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="list-group-item bg-dark border-success mb-3">
+                        <div class="row align-items-center">
+                            <div class="col-md-2 col-4">
+                                <img src="img/stardewvalley.png" class="img-fluid rounded" alt="Stardew Valley">
+                            </div>
+                            <div class="col-md-6 col-8">
+                                <h5 class="text-green mb-1">Stardew Valley</h5>
+                                <p class="mb-1 text-muted">Cultive, crie animais e faça amigos nesta comunidade rural.</p>
+                                <div class="d-flex align-items-center">
+                                    <span class="text-success font-weight-bold mr-2">R$ 24,99</span>
+                                    <span class="badge badge-success">Disponível</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 mt-2 mt-md-0">
+                                <div class="d-flex justify-content-between">
+                                    <a href="JogoStardew.html" class="btn btn-sm btn-success">
+                                        <i class="fas fa-shopping-cart mr-1"></i>Comprar
+                                    </a>
+                                    <button class="btn btn-sm btn-outline-danger">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </button>
+                                </div>
+                                <button class="btn btn-sm btn-outline-secondary btn-block mt-2">
+                                    <i class="fas fa-gift mr-1"></i>Presentear
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="list-group-item bg-dark border-success mb-3">
+                        <div class="row align-items-center">
+                            <div class="col-md-2 col-4">
+                                <img src="img/greenhell.png" class="img-fluid rounded" alt="Green Hell">
+                            </div>
+                            <div class="col-md-6 col-8">
+                                <h5 class="text-green mb-1">Green Hell</h5>
+                                <p class="mb-1 text-muted">Sobreviva à selva amazônica neste desafio de sobrevivência.</p>
+                                <div class="d-flex align-items-center">
+                                    <span class="text-success font-weight-bold mr-2">R$ 47,49</span>
+                                    <span class="badge badge-success">Disponível</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 mt-2 mt-md-0">
+                                <div class="d-flex justify-content-between">
+                                    <a href="JogoGreen.html" class="btn btn-sm btn-success">
+                                        <i class="fas fa-shopping-cart mr-1"></i>Comprar
+                                    </a>
+                                    <button class="btn btn-sm btn-outline-danger">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </button>
+                                </div>
+                                <button class="btn btn-sm btn-outline-secondary btn-block mt-2">
+                                    <i class="fas fa-gift mr-1"></i>Presentear
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mt-4">
+            <div class="col-12 text-center">
+                <div class="bg-dark-green p-4 rounded">
+                    <i class="fas fa-gift fa-3x text-success mb-3"></i>
+                    <h4 class="text-green">Compartilhe sua lista de desejos</h4>
+                    <p class="text-muted">Compartilhe com amigos e familiares para que possam presentear você!</p>
+                    <button class="btn btn-outline-success">
+                        <i class="fas fa-share-alt mr-2"></i>Compartilhar Lista
+                    </button>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer>
-        <h3>Contato:</h3>
-        <a id="suporte" href="">Suporte</a>
+
+    <footer class="mt-5">
+        <div class="container-fluid">
+            <div class="row py-4">
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-green">Steam da Darkweb</h5>
+                    <p class="text-muted">Sua loja de jogos digital com os melhores preços e variedade.</p>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <h5 class="text-green">Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-muted">Início</a></li>
+                        <li><a href="#" class="text-muted">Sobre nós</a></li>
+                        <li><a href="#" class="text-muted">Contato</a></li>
+                        <li><a href="#" class="text-muted">Suporte</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <h5 class="text-green">Categorias</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-muted">Ação</a></li>
+                        <li><a href="#" class="text-muted">Aventura</a></li>
+                        <li><a href="#" class="text-muted">RPG</a></li>
+                        <li><a href="#" class="text-muted">Estratégia</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <h5 class="text-green">Contato</h5>
+                    <ul class="list-unstyled">
+                        <li class="text-muted"><i class="fas fa-envelope mr-2 text-success"></i> suporte@steamdarkweb.com</li>
+                        <li class="text-muted"><i class="fas fa-phone mr-2 text-success"></i> (11) 99999-9999</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row py-3 border-top border-success">
+                <div class="col-12 text-center">
+                    <p class="text-muted">&copy; 2023 Steam da Darkweb. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </body>
 </html>
